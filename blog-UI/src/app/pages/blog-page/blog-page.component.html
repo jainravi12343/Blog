@@ -1,0 +1,49 @@
+<div class="m5">
+    <div class="d-flex">
+    <input
+        class="form-control me-2 mr20 m5" 
+        type="search"
+        [(ngModel)]="view"
+        placeholder="Search" 
+        aria-label="Search"
+    >
+    <button class="btn btn-outline-success my-2 my-sm-0 m5"(click)="getBlogsBySearch(view)">Search</button>
+    </div>
+<p><strong>Read On Language</strong></p>
+<button
+    class="ml20 btn btn-primary"
+    name="C"
+    #localRef
+    (click)="getBlogsByLanguage(localRef.name)"
+    >C 
+</button>
+<button
+    class="ml20 btn btn-primary"
+    name="C++"
+    #localRef
+    (click)="getBlogsByLanguage('C++')"
+    >C++ 
+</button>
+<button
+    class="ml20 btn btn-primary"
+    name="Java"
+    #localRef
+    (click)="getBlogsByLanguage('JAVA')"
+    >Java 
+</button>
+</div>
+<h3 class="text-center mt20">{{title}}</h3>
+<div *ngIf="noResult">
+    <h2>Sorry !! No Result Found </h2>
+</div>
+<div >
+    <div class="container-fluid">
+        <div class="row">
+            <div *ngFor="let blog of blogs" class="col-md-3">
+                <app-protoview-blog [blog]="blog"></app-protoview-blog>
+            <hr>
+            </div>
+        </div>
+    </div>
+    <!-- <app-blog-view [blog]="blog"></app-blog-view> -->
+</div>

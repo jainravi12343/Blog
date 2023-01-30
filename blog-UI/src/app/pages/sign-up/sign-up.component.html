@@ -1,0 +1,158 @@
+
+<div class="container" >
+    <div class="row" style="margin-top:20px;">
+        <div class="col-md-6 offset-md-3">
+            <mat-card class="mt20">
+            <h3 class="text-center mt20">Register here!!</h3>
+            <div class="container text-center"  >
+                <img src="../../../assets/logo1.png" class="text-center" alt="logo" style="height: 100px;"/>
+                
+                <form (ngSubmit)="formSubmit()"> 
+                    <!-- username-->
+                    <!-- <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>username</mat-label>
+                        <input
+                         matInput placeholder="Placeholder"
+                         name="username"
+                         [(ngModel)]="user.username"
+                         required="true"
+                        >
+                        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                    </mat-form-field> -->
+                      <!-- FirstName-->
+                      <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>FirstName</mat-label>
+                        <input matInput placeholder="firstName"
+                        [(ngModel)]="user.firstName"
+                        name="firstName"
+                        required="true"
+                        >
+                        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                     </mat-form-field>
+                    <!-- lastName-->
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>LastName</mat-label>
+                        <input matInput placeholder="lastName"
+                        [(ngModel)]="user.lastName"
+                        name="lastName"
+                        required="true"
+                        >
+                        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                     </mat-form-field>
+
+                    <!-- gender-->
+
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Gender</mat-label>
+                    <mat-select>
+                        <mat-option value="Male">Male</mat-option>
+                        <mat-option value="Female">Female</mat-option>
+                        <mat-option value="Transgender">Transgender</mat-option>
+                        <mat-option value="other">other</mat-option>
+                    </mat-select>
+                        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                     </mat-form-field>
+
+                     <!--Email-->
+                     <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Email</mat-label>
+                        <input type="email" matInput placeholder="email"
+                        [(ngModel)]="user.email"
+                        name="email"
+                        required="true"
+                        >
+                        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                     </mat-form-field>
+
+                       <!-- password-->
+                     <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>password</mat-label>
+                        <input matInput placeholder="Placeholder"
+                        name="password"
+                        [(ngModel)]="user.password"
+                        required="true"
+                        >
+                        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                    </mat-form-field> 
+                    
+                     <!--Phone-->
+                     <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Phone</mat-label>
+                        <input type="number" matInput placeholder="phone"
+                        [(ngModel)]="user.phone"
+                        name="phone"
+                        required="true"
+                        [minlength]="phone_minLength"
+                        [maxlength]="phone_maxLength"
+                        >
+                        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                     </mat-form-field>
+                     <!--Resume of CV -->
+                     <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Resume Url</mat-label>
+                        <input type="url" matInput placeholder="Resume-url"
+                            [(ngModel)]="user.resumeUrl"
+                            name="resumeUrl"
+                            required="true"
+                        >
+                        <mat-hint>*Link Must be public</mat-hint>
+                        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                     </mat-form-field>
+                    
+                    <!-- Linkedin URL -->
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Linekdin Url</mat-label>
+                        <input type="url" matInput placeholder="Linekdin-url"
+                            [(ngModel)]="user.linkedinUrl"
+                            name="linkedinUrl"
+                            required="true"
+                        >
+                        <mat-icon  matSuffix>sentiment_very_satisfied</mat-icon>
+                     </mat-form-field>
+                
+                     <!-- DOB -->
+                     <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Date oF Birth</mat-label>
+                        <input type="date" matInput placeholder="DOB (DD/MM/YYYY)"
+                            [(ngModel)]="user.dob"
+                            name="dob"
+                            required="true"
+                        >
+                        <mat-icon  matSuffix>sentiment_very_satisfied</mat-icon>
+                     </mat-form-field>
+                     
+                     <!-- YOE-->
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Years of Experience</mat-label>
+                        <input type="number" matInput placeholder="Years of Experience"
+                            [(ngModel)]="user.yearsOfExperience"
+                            name="yearsOfExperience"
+                            required="true"
+                        >
+                        <mat-icon  matSuffix>sentiment_very_satisfied</mat-icon>
+                     </mat-form-field>
+                     
+                     <!-- AboutMe-->
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>About Me</mat-label>
+                        <input type="textarea" matInput placeholder="About Me"
+                            rows="10"
+                            [(ngModel)]="user.aboutMe"
+                            name="aboutMe"
+                            required="true"
+                        >
+                        <mat-icon  matSuffix>sentiment_very_satisfied</mat-icon>
+                     </mat-form-field>
+                
+                     
+                     <div class="container">
+                        <button mat-raised-button color="primary" value="submit">Register</button>
+                        <button mat-raised-button color="accent" type="reset" class="my-button">reset</button>
+                     </div>
+                     
+                </form>
+            </div>
+        </mat-card>
+        </div>
+    </div>
+</div>

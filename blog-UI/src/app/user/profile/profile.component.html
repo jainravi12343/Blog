@@ -1,0 +1,50 @@
+<mat-card class="mt20" *ngIf="user">
+    <hr>
+    <mat-card-title class="text-center mt20 ml20"> Your Profile Details</mat-card-title>
+    <!-- {{user | json}} -->
+    <mat-card-content>
+        <div class="container mt20">
+            <div class="container text-center">
+                <img
+                 src="../../../assets/images/profile.jpg" alt="profile photo"
+                class="profile-img-responsive mb20"
+                 >
+                <h3 class="mt20"><strong>{{user.firstName}}  {{user.lastName}}</strong>  </h3>
+            </div>
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                   <!-- Table Details-->
+                   <table class="table text-center">
+                    <tr>
+                        <td>Email</td>
+                        <td>{{user.email}}</td>
+                    </tr>
+                    <tr>
+                        <td>Phone Number</td>
+                        <td>{{user.phone}}</td>
+                    </tr>
+                    <tr>
+                        <td>Role</td>
+                        <td>{{user.role}}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Status</td>
+                        <td>{{user.enabled?"ACTIVE":"NON-ACTIVE"}}</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>LinkedIn</td>
+                        <td>{{user.linkedinUrl}}</td>
+                    </tr>
+                  </table>
+                </div>
+            </div>
+        </div>
+    </mat-card-content>
+    <mat-card-actions class="text-center justify-content-center">
+        <button mat-raised-button color="primary" class="ml20">Update</button>
+        <button mat-raised-button color="accent"  class="ml20">Share</button>
+    </mat-card-actions>
+
+    </mat-card>

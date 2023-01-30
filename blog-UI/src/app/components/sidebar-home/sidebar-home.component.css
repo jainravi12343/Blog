@@ -1,0 +1,9 @@
+.img-responsive{
+    height:30px;
+    width:20px;
+    border-radius: 50%;
+}
+.blog-list{
+    background-color: beige;
+    margin-left:5px;
+}

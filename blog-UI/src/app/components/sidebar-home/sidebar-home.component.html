@@ -1,0 +1,12 @@
+<div class="card mt20 blog-list" style="width: 18rem;">
+    <!-- <img class="card-img-top" src=".../100px180/" alt="Card image cap"> -->
+    <div class="card-body">
+      <h5 class="card-title">{{blog.title}} {{blog.date}} by: {{blog.owner}} </h5>
+      <a 
+      href="#"
+        routerLink="/home-blog-view"
+        class="btn btn-primary"
+        (click)="sendBlog()"
+        >Read Blog</a>
+    </div>
+  </div>

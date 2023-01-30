@@ -1,0 +1,151 @@
+<hr>
+    <h2 class="text-center">Create A Blog </h2>
+    
+<hr>
+<mat-card class="card ">
+  <mat-card-header>Create a blog</mat-card-header>
+  <div>
+  <img class="card-img-top article-banner" src="../../../assets/images/artice-banner.jpg" alt="Card image cap">  
+  </div>
+  <mat-card-content class="mt20">
+    <mat-form-field class="full-width" appearance="outline">
+      <mat-label>Title</mat-label>
+      <input
+        matInput placeholder="Enter Title"
+        name="title"
+        [(ngModel)]="blog.title"
+        required="true"
+      >
+    </mat-form-field>
+    <mat-form-field class="full-width" appearance="outline">
+      <mat-label>Description</mat-label>
+      <input 
+        matInput placeholder="Enter Description"
+        name="description"
+        [(ngModel)]="blog.description"
+        required="true"
+      >
+    </mat-form-field>
+    <mat-form-field appearance="fill" class="full-width">
+      <mat-label>Choose Category</mat-label>
+      <mat-select
+        name="category"
+        [(ngModel)]="blog.category"
+      >
+      <mat-option value="Programming" >Programming</mat-option>
+      <mat-option value="Travel">Interview-Experience </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="fill" class="full-width">
+      <mat-label>Choose Language</mat-label>
+      <mat-select 
+        name="languages"
+        [(ngModel)]="blog.languages"
+      >
+        <mat-option value="C">C</mat-option>
+        <mat-option value="C++">C++</mat-option>
+        <mat-option value="Java">Java</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="full-width">
+      <mat-label>Content</mat-label>
+      <textarea matInput rows="10"
+        name="content"
+        [(ngModel)]="blog.content"
+      ></textarea>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="full-width">
+      <mat-label>Footer</mat-label>
+      <textarea matInput rows="5"
+        name="footer"
+        [(ngModel)]="blog.footer"
+      ></textarea>
+    </mat-form-field>
+
+  </mat-card-content>
+  <div class="form-group text-center">
+    <button mat-raised-button color="primary"
+      (click)="formSubmit()"
+    >Submit</button>
+  </div>
+</mat-card>
+<!-- 
+<div class="card">
+    <img class="card-img-top article-banner" src="../../../assets/images/artice-banner.jpg" alt="Card image cap">
+    <hr>
+    <div class="card-body">
+      
+        <form class="form-group" >
+          <mat-form-field appearance="fill">
+              <mat-label>Fill form field</mat-label>
+              <input matInput placeholder="Placeholder">
+              <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+              <mat-hint>Hint</mat-hint>
+          </mat-form-field>
+
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" class="form-control" id="title" placeholder="Enter Title"
+                  name="title"
+                  [ngModelOptions]="{standalone:true}"
+                  [(ngModel)]="blog.title"
+                >
+            </div>
+            <div class="form-group">
+                <label for="Description">Description</label>
+                <input type="text" class="form-control" id="Description" placeholder="Enter Description"
+                  name="description"
+                  [ngModelOptions]="{standalone:true}"
+                  [(ngModel)]="blog.description"
+                >
+              </div>
+            <div class="form-group">
+              <label for="category">Category</label>
+              <select class="form-control" id="category"
+                name="category"
+                [ngModelOptions]="{standalone:true}"
+                [(ngModel)]="blog.category"
+                >
+                <option>Programming</option>
+                <option>Interview-Experience</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="langugae">Langugae</label>
+              <select class="form-control" id="langugae"
+              name="language "
+              [ngModelOptions]="{standalone:true}"
+                [(ngModel)]="blog.languages"
+              >
+                <option>C</option>
+                <option>C++</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="content">Content of Blog</label>
+              <textarea class="form-control" id="content" rows="10" placeholder="Copy paste the content"
+              [ngModelOptions]="{standalone:true}"
+                [(ngModel)]="blog.content"
+              ></textarea>
+            </div>
+            <div class="form-group">
+                <label for="footer">Footer</label>
+                <textarea class="form-control" id="content" rows="3" placeholder="Footer content"
+                  [(ngModel)]="blog.footer"
+                  [ngModelOptions]="{standalone:true}"
+                ></textarea>
+            </div>
+            <div class="form-group text-center">
+              <button mat-raised-button color="primary"
+                (click)="formSubmit()"
+              >Submit</button>
+                 <button class="btn btn-primary"
+                  (click)="formSubmit()"  
+                >Submit 
+                </button> 
+            </div>
+          </form>
+    </div>
+</div> -->

@@ -1,0 +1,28 @@
+{
+  "comments": [
+    {
+      "id": 1,
+      "body": "First Comment",
+      "userId": "user@gmail.com",
+      "username": "User",
+      "parentId": null,
+      "createdAt": "Sat Jan 14 21:12:33 IST 2023"
+    },
+    {
+      "id": 2,
+      "body": "Second Comment",
+      "userId": "ravi@gmail.com",
+      "username": "Ravi",
+      "parentId": null,
+      "createdAt": "Sat Jan 14 21:12:33 IST 2023"
+    },
+    {
+      "id": 3,
+      "body": "Third Comment",
+      "userId": "ravi@gmail.com",
+      "username": "Ravi",
+      "parentId": 1,
+      "createdAt": "Sat Jan 14 21:12:33 IST 2023"
+    }
+  ]
+}
