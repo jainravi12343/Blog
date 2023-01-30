@@ -1,0 +1,15 @@
+<mat-card class="example-card">
+    <mat-card-header 
+        (click)="ReadArticle()"
+        routerLink="/read-blog"
+    >
+      <mat-card-title-group>
+        <mat-card-subtitle>{{blog.owner}}, {{blog.date}}</mat-card-subtitle>
+        <mat-card-title>{{blog.title}}</mat-card-title>
+        <img mat-card-sm-image src="../../../assets/images/profile.jpg" >
+      </mat-card-title-group>
+    </mat-card-header>
+    <mat-card-content>
+      <strong>{{blog.description}}</strong>
+    </mat-card-content>
+  </mat-card>

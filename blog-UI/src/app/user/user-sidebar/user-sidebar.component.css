@@ -1,0 +1,18 @@
+.md36{
+    font-size: 36px; 
+    color: blue;
+    padding:2px
+    
+}
+.center { 
+    text-align:center; 
+    width:100%; 
+} 
+.list{
+    border:2px solid red;
+    margin:5px;
+}
+/* label{
+    color: red;
+    font-weight: 2px;
+} */

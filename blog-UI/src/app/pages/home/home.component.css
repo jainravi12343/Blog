@@ -1,0 +1,8 @@
+.list-blog{
+    height: 90%;
+    overflow-y:scroll;
+    scroll-behavior: smooth;
+    width: 100%;
+    background-color: cornsilk;
+    border-radius: 0px;
+}

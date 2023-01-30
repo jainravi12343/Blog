@@ -1,0 +1,26 @@
+<div class="container-fluid blog-view-card-container">
+    <p>works!!</p>
+    {{blog|json}}
+    <div class="row">
+        <div class="col-md-9">
+            <div class="card blog-view-card">
+                <img src="../../../assets/images/profile.jpeg" class="card-img-top img-responsive " alt="profile"> 
+                <div class="card-body">
+                    <h5 class="card-title"><strong>{{blog.title}}</strong>  </h5>
+                    <pre>{{blog.description}} </pre>
+                    <pre>{{blog.createdBy}} </pre>
+                    <p class="card-text blog-view-card-content">
+                        {{blog.content}}
+                    </p>
+                    <br>
+                    <p class="card-text blog-view-card-footer">{{blog.footer}}</p>
+                </div>
+                <div class="text-center mb20">
+                    <button type="like" class="my-button"(click)="updateLike()">Like</button>
+                    <button type="like" class="my-button"(click)="updateDislike()">Dislike</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

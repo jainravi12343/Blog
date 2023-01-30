@@ -1,0 +1,75 @@
+ <hr class="divider">
+<div class="container-fluid blog-view-card-container">
+     <div class="col-md-10 offset-md-1 "> 
+<div class="row blog-details-container">
+  <div class="leftcolumn">
+    <div class="card ">
+        <h2>{{blog.title}}</h2>
+        <h5> {{blog.description}}, {{blog.date}} </h5>
+        <div class="image" > 
+            <!-- <img src="../../../assets/images/artice-banner.jpg" class="fakeimg" > -->
+            <h4>{{blog.description}}</h4>
+            </div>
+        <hr>
+        <div class="card blog-card "> 
+            <h3>Heading </h3>
+        <img class="fakeimg" src="../../../assets/images/profile.jpeg" style="height:200px;" >Image
+            <pre class="card-text"> 
+                {{blog.content}}
+            </pre>
+        <!-- <div> -->
+            <pre class="card-text">
+                  {{blog.footer}}  
+            </pre>
+        <!-- </div> -->
+    </div>
+  </div>
+  </div>
+  <div class="rightcolumn">
+    <app-about-author [owner]="owner" ></app-about-author>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <h1></h1>
+    </div>
+    <div class="card">
+        <h3>Follow Me</h3>
+        <p>Some text..</p>
+      </div>
+      
+  </div>
+    <div class="footer">
+        <p>
+            <strong>Is is this Helpful ?
+                <a   href="#" class="material-symbols-outlined feedback" data-toggle="tooltip" data-placement="top" title="Like">
+                    thumb_up
+                </a>
+                
+                <a href="#" class="material-symbols-outlined feedback " data-toggle="tooltip" data-placement="top" title="DisLike">
+                    thumb_down
+                </a>
+            </strong>
+        </p>
+    </div>
+</div>
+<!--
+            <div class="card blog-view-card">
+                <img src="../../../assets/images/profile.jpeg" class="card-img-top img-responsive " alt="profile"> 
+                <div class="card-body">
+                    <h5 class="card-title"><strong>{{blog.title}}</strong>  </h5>
+                    <pre>{{blog.description}} </pre>
+                    <pre>{{blog.createdBy}} </pre>
+                    <p class="card-text blog-view-card-content">
+                        {{blog.content}}
+                    </p>
+                    <br>
+                    <p class="card-text blog-view-card-footer">{{blog.footer}}</p>
+                </div>
+                <div class="text-center mb20">
+                    <button type="like" class="my-button"(click)="updateLike()">Like</button>
+                    <button type="like" class="my-button"(click)="updateDislike()">Dislike</button>
+                </div>
+            </div>
+        </div>
+
+    </div> -->
+</div> 
